@@ -1,0 +1,14 @@
+{
+  "name": "travel-website",
+  "version": "1.0.0",
+  "description": "Responsive travel website template featuring destination galleries, sliders, and holiday booking.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "echo 'Static site build complete'",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -2,379 +2,882 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
-    <title>Travel Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;1,300&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css">
-    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+  <title>Fiji Travel Website</title>
+  <meta name="description" content="Responsive travel website template featuring destination galleries, interactive sliders, and holiday booking." />
+  <meta property="og:title" content="Fiji Travel Website" />
+  <meta property="og:description" content="Responsive travel website template featuring destination galleries, interactive sliders, and holiday booking." />
+  <link rel="shortcut icon" href="assets/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
-    <div id="arrow">
-        <i class="fa fa-arrow-up"></i>
+  <!-- Back to top button -->
+  <button id="backToTopBtn" class="back-to-top" type="button" aria-label="Scroll back to top">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- TOP BAR CONTRACT: 1 Row, 3 Zones (Brand Wordmark — 5 Nav Links — Primary Actions) -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <!-- Zone 1: Single text element Brand Wordmark -->
+      <a href="#top" class="brand-wordmark">Fiji &amp; Beyond</a>
+
+      <!-- Zone 2: 5 Single-Line Navigation Links -->
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary Navigation">
+        <a class="nav-link" href="#regions">Regions</a>
+        <a class="nav-link" href="#packages">Packages</a>
+        <a class="nav-link" href="#experiences">Experiences</a>
+        <a class="nav-link" href="#destinations">Gateways</a>
+        <a class="nav-link" href="#journal">Journal</a>
+      </nav>
+
+      <!-- Zone 3: 1-2 Primary Actions -->
+      <div class="header-actions">
+        <button type="button" class="btn-outline-header" id="openSavedBookingsBtn">
+          Saved (<span id="savedCountBadge" class="tabular-nums">0</span>)
+        </button>
+        <a href="#concierge" class="btn-primary">Plan Your Voyage</a>
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded="false">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
-    <nav>
-        <div class="container">
-            <div class="menu-par">
-                <div class="logo-par">
-                    <a href="index.html">
-                        <h2>Travel</h2>
-                    </a>
-                </div>
-                <div class="nav">
-                    <ul>
-                        <li><a class="menu-hover" href="index.html">Home</a></li>
-                        <li><a class="menu-hover" href="index.html">Travel</a></li>
-                        <li><a class="menu-hover" href="index.html">Book Now</a></li>
-                        <li><a class="menu-hover" href="index.html">Gallery</a></li>
-                        <li><a class="menu-hover" href="index.html">Holyday</a></li>
-                        <li><a class="menu-hover" href="index.html">Blog</a></li>
-                    </ul>
-                </div>
-                <div id="toggle-btn">
-                    <i class="fa fa-bars"></i>
-                </div>
-            </div>
-        </div>
-    </nav>
+  </header>
 
-    <header>
-        <div class="container">
-            <div class="header-info-par">
-                <h1 class="typewrite" data-period="2000"
-                    data-type='["Happiness is closer than you think","Adventure Awaits, go find it.","Dont be a tourist, be a traveler."]'>
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, ea. Mollitia maiores voluptatum
-                    vitae suscipit tenetur ut officiis assumenda ipsam.</p>
-                <a href="#" class="a">Read More</a>
+  <main id="top">
+    <!-- ====================================================================
+         HERO SECTION
+         ==================================================================== -->
+    <section class="hero-section">
+      <div class="hero-media">
+        <img
+          src="images/headr-banner.jpg"
+          alt="Aerial panorama of turquoise coral lagoons and volcanic islands in Fiji"
+          referrerpolicy="no-referrer"
+          onerror="this.style.display='none'"
+        />
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content-grid">
+          <!-- Left Focal Column -->
+          <div>
+            <div class="hero-kicker">
+              <span>Official Archipelago &amp; Global Expedition Desk</span>
+              <span aria-hidden="true">·</span>
+              <span class="tabular-nums">17°42'S 178°03'E</span>
             </div>
-            <div class="video">
-                <video id="video" autoplay loop muted>
-                    <source src="images/travel-video.mp4" type="video/mp4" />
-                </video>
+
+            <h1 class="hero-headline">
+              Where the South Pacific meets <em>uncharted</em> horizon.
+            </h1>
+
+            <p
+              class="hero-typewriter-line typewrite"
+              data-period="2400"
+              data-type='["Private lagoon charters across 333 volcanic islands.","Marine biologist-guided soft coral diving in Taveuni.","Bespoke multi-country itineraries from Nadi to the Mediterranean."]'
+            >
+              Private lagoon charters across 333 volcanic islands.
+            </p>
+
+            <p class="hero-lead">
+              We architect private island stays, inter-island seaplane transfers, and conservation-led reef voyages across the Fiji Archipelago and fourteen signature global destinations.
+            </p>
+
+            <div class="hero-cta-row">
+              <a href="#concierge" class="btn-primary">Design Custom Itinerary</a>
+              <a href="#regions" class="btn-hero-secondary">Explore 7 Island Regions</a>
             </div>
+          </div>
+
+          <!-- Right Interactive Voyage Quick-Finder -->
+          <aside class="hero-finder-panel" aria-label="Quick Itinerary Finder">
+            <h2 class="finder-title">Expedition Quick-Finder</h2>
+            <p class="finder-subtitle">Filter curated departures or jump directly to reservation</p>
+
+            <form id="quickFinderForm">
+              <div class="finder-grid">
+                <div class="finder-field full-span">
+                  <label for="quickRegion">Destination Focus</label>
+                  <select id="quickRegion" class="finder-select">
+                    <option value="all">All Fiji &amp; Global Voyages</option>
+                    <option value="fiji">Fiji Archipelago (7 Regions)</option>
+                    <option value="europe">Europe &amp; Mediterranean</option>
+                    <option value="asia">Asia &amp; Middle East</option>
+                  </select>
+                </div>
+
+                <div class="finder-field">
+                  <label for="quickDuration">Duration</label>
+                  <select id="quickDuration" class="finder-select">
+                    <option value="7">7 Nights Standard</option>
+                    <option value="10">10 Nights Extended</option>
+                  </select>
+                </div>
+
+                <div class="finder-field">
+                  <label for="quickGuests">Travelers</label>
+                  <select id="quickGuests" class="finder-select">
+                    <option value="2">2 Guests</option>
+                    <option value="1">1 Solo Traveler</option>
+                    <option value="4">4 Guests (Family/Private)</option>
+                    <option value="6">6 Guests (Charter Group)</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%;">
+                Match Available Packages
+              </button>
+            </form>
+          </aside>
         </div>
-    </header>
-    <!-- Second Slides Section -->
-    <section id="welcome-text">
-        <div class="container">
-            <h2>The Official Travel Site of the friendly Fiji Islands</h2>
-            <p>when an unknown printer took a gallery of type and scrambled it to make a type speicmen</p>
+
+        <!-- Quantitative Proof Strip adjacent to Hero Claims -->
+        <div class="hero-metrics-strip">
+          <div class="metric-item">
+            <span class="metric-value">333 Islands</span>
+            <span class="metric-label">Surveyed across 94 private atolls &amp; reefs</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">27.8°C Mean</span>
+            <span class="metric-label">Year-round lagoon surface temperature</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">42 Dive Sites</span>
+            <span class="metric-label">Protected soft-coral passages in Somosomo &amp; Beqa</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">100% Verified</span>
+            <span class="metric-label">Direct local resort &amp; seaplane charter rates</span>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Slides Section Start-->
-    <section id="slides-par">
-        <div class="container">
-            <div class="slides">
-                <div class="slide_1 slide_2">
-                    <div class="slide-info">
-                        <p>Outer Islands</p>
-                    </div>
-                </div>
-                <div class="slide_1 slide_3">
-                    <div class="slide-info">
-                        <p>Pacific Harbour and Beqa</p>
-                    </div>
-                </div>
-                <div class="slide_1 slide_4">
-                    <div class="slide-info">
-                        <p>Savusavu & Surrounds</p>
-                    </div>
-                </div>
-                <div class="slide_1 slide_5">
-                    <div class="slide-info">
-                        <p>Suncoast</p>
-                    </div>
-                </div>
-                <div class="slide_1 slide_6">
-                    <div class="slide-info">
-                        <p>Taveun1</p>
-                    </div>
-                </div>
-                <div class="slide_1 slide_7">
-                    <div class="slide-info">
-                        <p>Yasawa Islands</p>
-                    </div>
-                </div>
-                <div class="slide_1 slide_8">
-                    <div class="slide-info">
-                        <p>Nadi</p>
-                    </div>
-                </div>
-            </div>
+
+    <!-- ====================================================================
+         01. FIJI ARCHIPELAGO INTERACTIVE REGIONS
+         ==================================================================== -->
+    <section class="section-block" id="regions">
+      <div class="container">
+        <div class="section-header split-header">
+          <div>
+            <p class="section-kicker">01. Archipelago Geography · The Friendly Fiji Islands</p>
+            <h2 class="section-title">Seven distinct island regions, each with its own tide and terrain.</h2>
+          </div>
+          <p class="section-description">
+            Select any region below to inspect transfer logistics, seasonal conditions, and signature marine or rainforest experiences.
+          </p>
         </div>
+
+        <!-- Interactive 7-Slide Accordion -->
+        <div class="archipelago-accordion" id="archipelagoAccordion" role="region" aria-label="Fiji Island Regions">
+          <!-- Populated & enhanced dynamically or via static markup with active handlers -->
+          <article class="region-panel active" data-region-index="0" tabindex="0">
+            <img src="images/recipe_slides/recipe1.jpg" alt="Outer Islands pristine atolls" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="region-scrim"></div>
+            <span class="region-collapsed-label">Outer Islands</span>
+            <div class="region-expanded-content">
+              <p class="region-meta-line">Lau &amp; Kadavu Group · Seaplane 55 min from Nadi</p>
+              <h3 class="region-title">Outer Islands</h3>
+              <p class="region-summary">Remote volcanic atolls ringed by untouched barrier reefs, accessible only by amphibious aircraft or private yacht.</p>
+            </div>
+          </article>
+
+          <article class="region-panel" data-region-index="1" tabindex="0">
+            <img src="images/recipe_slides/recipe2.jpg" alt="Pacific Harbour and Beqa Lagoon" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="region-scrim"></div>
+            <span class="region-collapsed-label">Pacific Harbour &amp; Beqa</span>
+            <div class="region-expanded-content">
+              <p class="region-meta-line">Southern Viti Levu · Private Launch 35 min</p>
+              <h3 class="region-title">Pacific Harbour &amp; Beqa</h3>
+              <p class="region-summary">Fiji's adventure coast featuring navigable rainforest rivers, soft-coral pinnacles, and traditional firewalking villages.</p>
+            </div>
+          </article>
+
+          <article class="region-panel" data-region-index="2" tabindex="0">
+            <img src="images/recipe_slides/recipe3.jpg" alt="Savusavu bay and thermal springs" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="region-scrim"></div>
+            <span class="region-collapsed-label">Savusavu &amp; Surrounds</span>
+            <div class="region-expanded-content">
+              <p class="region-meta-line">Vanua Levu South Coast · Domestic Flight 50 min</p>
+              <h3 class="region-title">Savusavu &amp; Surrounds</h3>
+              <p class="region-summary">A sheltered volcanic caldera harbor known for geothermal hot springs, black pearl farms, and cacao estates.</p>
+            </div>
+          </article>
+
+          <article class="region-panel" data-region-index="3" tabindex="0">
+            <img src="images/recipe_slides/recipe4.jpg" alt="Suncoast mountains and reefs" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="region-scrim"></div>
+            <span class="region-collapsed-label">Suncoast</span>
+            <div class="region-expanded-content">
+              <p class="region-meta-line">Northern Viti Levu · Coastal Drive 2 hrs from Nadi</p>
+              <h3 class="region-title">Suncoast</h3>
+              <p class="region-summary">Dry-zone cane valleys under the Nakauvadra Range offering trade-wind kiteboarding and Bligh Water reef diving.</p>
+            </div>
+          </article>
+
+          <article class="region-panel" data-region-index="4" tabindex="0">
+            <img src="images/recipe_slides/recipe5.jpg" alt="Taveuni waterfalls and rainforest" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="region-scrim"></div>
+            <span class="region-collapsed-label">Taveuni</span>
+            <div class="region-expanded-content">
+              <p class="region-meta-line">The Garden Island · Flight 75 min from Nadi</p>
+              <h3 class="region-title">Taveuni</h3>
+              <p class="region-summary">Bouma National Heritage Park triple waterfalls, highland crater lakes, and the world-renowned Rainbow Reef.</p>
+            </div>
+          </article>
+
+          <article class="region-panel" data-region-index="5" tabindex="0">
+            <img src="images/recipe_slides/recipe6.jpg" alt="Yasawa Islands white sand beaches" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="region-expanded-content">
+              <p class="region-meta-line">Western Leeward Chain · Catamaran or Seaplane 30 min</p>
+              <h3 class="region-title">Yasawa Islands</h3>
+              <p class="region-summary">Twenty sun-drenched volcanic islands famed for the Sawa-i-Lau limestone sea caves and manta ray channels.</p>
+            </div>
+            <div class="region-scrim"></div>
+            <span class="region-collapsed-label">Yasawa Islands</span>
+          </article>
+
+          <article class="region-panel" data-region-index="6" tabindex="0">
+            <img src="images/recipe_slides/recipe7.jpg" alt="Nadi sleeping giant orchid gardens" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="region-scrim"></div>
+            <span class="region-collapsed-label">Nadi &amp; Denarau</span>
+            <div class="region-expanded-content">
+              <p class="region-meta-line">Western Gateway · International Hub</p>
+              <h3 class="region-title">Nadi &amp; Denarau</h3>
+              <p class="region-summary">Home to the Garden of the Sleeping Giant, Sabeto thermal mud pools, and private marina departures to the Mamanucas.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Live Regional Field Dossier Panel -->
+        <div class="region-detail-bar" id="regionDossierBar">
+          <div>
+            <p class="unboxed-metadata">
+              <span id="dossierRegionTag">Active Dossier</span>
+              <span aria-hidden="true">·</span>
+              <span id="dossierCoords" class="tabular-nums">18°59'S 178°10'E</span>
+            </p>
+            <h3 class="package-title" id="dossierTitle" style="margin-bottom: 4px;">Outer Islands (Kadavu &amp; Lau)</h3>
+            <p class="section-description" id="dossierNotes" style="font-size: 0.875rem;">
+              Ideal for travelers seeking zero light pollution, Great Astrolabe Reef diving, and private beachfront bures.
+            </p>
+          </div>
+
+          <div class="region-stats-inline">
+            <div class="region-stat-cell">
+              <span class="label">Transfer Logistics</span>
+              <span class="value" id="dossierTransfer">55m Seaplane</span>
+            </div>
+            <div class="region-stat-cell">
+              <span class="label">Prime Window</span>
+              <span class="value" id="dossierSeason">May – October</span>
+            </div>
+            <div class="region-stat-cell">
+              <span class="label">Guided Rate From</span>
+              <span class="value tabular-nums" id="dossierRate">$2,450 / 7 Nights</span>
+            </div>
+          </div>
+
+          <div>
+            <button type="button" class="btn-primary" id="bookActiveRegionBtn">
+              Book Outer Islands
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- Slides Section Start-->
 
-    <!-- Book Now Section Start -->
-    <section id="book">
-        <div class="container">
-            <div class="book-content-par">
-                <div class="book-counter">
-                    <h3>Book Now</h3>
-                    <div id="clockdiv">
-                        <div>
-                            <span class="days"></span>
-                            <div class="smalltext">Days</div>
-
-                        </div>
-                        <div>
-                            <span class="hours"></span>
-                            <div class="smalltext">Hours</div>
-
-                        </div>
-                        <div>
-                            <span class="minutes"></span>
-                            <div class="smalltext">Minutes</div>
-
-                        </div>
-                        <div>
-                            <span class="seconds"></span>
-                            <div class="smalltext">Seconds</div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="book-form">
-                    <form>
-                        <input type="text" id="fname" name="firstname" placeholder="Your Name...">
-                        <input type="text" id="lname" name="lastname" placeholder="Your Last Name...">
-                        <select name="country" id="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="india">USA</option>
-                        </select>
-                        <textarea name="subject" id="subject" placeholder="Write something..."
-                            style="height: 200px;"></textarea>
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-            </div>
+    <!-- ====================================================================
+         02. CURATED PACKAGES (FIJI & INTERNATIONAL)
+         ==================================================================== -->
+    <section class="section-block bg-sand" id="packages">
+      <div class="container">
+        <div class="section-header split-header">
+          <div>
+            <p class="section-kicker">02. Bespoke Itineraries · Transparent All-Inclusive Pricing</p>
+            <h2 class="section-title">Curated island charters &amp; international extensions.</h2>
+          </div>
+          <p class="section-description">
+            Switch between 7-night and 10-night durations to compare verified rates including private transfers, accommodation, and guided field excursions.
+          </p>
         </div>
+
+        <!-- Interactive Filter & Duration Controls -->
+        <div class="controls-toolbar">
+          <div class="segmented-filter" role="tablist" aria-label="Filter Packages by Region">
+            <button type="button" class="seg-btn active" data-pkg-filter="all">All Voyages (9)</button>
+            <button type="button" class="seg-btn" data-pkg-filter="fiji">Fiji Islands (3)</button>
+            <button type="button" class="seg-btn" data-pkg-filter="europe">Europe &amp; UK (3)</button>
+            <button type="button" class="seg-btn" data-pkg-filter="global">Asia, Americas &amp; MENA (3)</button>
+          </div>
+
+          <div class="search-duration-group">
+            <div class="search-input-wrap">
+              <input
+                type="search"
+                id="packageSearchInput"
+                placeholder="Search destination or activity..."
+                aria-label="Search packages"
+              />
+            </div>
+
+            <div class="segmented-filter" role="group" aria-label="Select Itinerary Duration">
+              <button type="button" class="seg-btn active" data-duration-btn="7">7 Nights</button>
+              <button type="button" class="seg-btn" data-duration-btn="10">10 Nights</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Packages Grid (Rendered & Filtered dynamically by JS) -->
+        <div class="packages-grid" id="packagesGrid"></div>
+      </div>
     </section>
-    <!-- Book Now Section End -->
 
-    <!-- Gallery Section Starts -->
-    <section id="gallery">
-        <div class="container">
-            <div class="row">
-                <div align="center" class="filter-btn-par">
-                    <button class="filter-button" data-filter="all">ALL</button>
-                    <button class="filter-button" data-filter="diving">DIVING</button>
-                    <button class="filter-button" data-filter="nature">NATURE</button>
-                    <button class="filter-button" data-filter="health">HEALTH</button>
-                </div>
-                <div class="filter-gal-par">
-                    <div class="gallery-item filter diving">
-                        <img src="images/fiji-surprise/diving1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="gallery-item filter diving">
-                        <img src="images/fiji-surprise/diving2.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="gallery-item filter diving">
-                        <img src="images/fiji-surprise/diving3.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="gallery-item filter health">
-                        <img src="images/fiji-surprise/health1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="gallery-item filter health">
-                        <img src="images/fiji-surprise/health2.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="gallery-item filter nature">
-                        <img src="images/fiji-surprise/nature1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="gallery-item filter nature">
-                        <img src="images/fiji-surprise/nature2.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="gallery-item filter nature">
-                        <img src="images/fiji-surprise/nature3.jpg" alt="" class="img-responsive">
-                    </div>
-                </div>
-            </div>
+    <!-- ====================================================================
+         03. FIJI SURPRISE EXPERIENCE GALLERY & LIGHTBOX
+         ==================================================================== -->
+    <section class="section-block" id="experiences">
+      <div class="container">
+        <div class="section-header split-header">
+          <div>
+            <p class="section-kicker">03. Visual Field Archive · Coral, Canopy &amp; Thermal Springs</p>
+            <h2 class="section-title">Moments captured across the archipelago.</h2>
+          </div>
+
+          <div class="segmented-filter" role="group" aria-label="Filter Experience Gallery">
+            <button type="button" class="seg-btn active" data-gal-filter="all">All Archives (8)</button>
+            <button type="button" class="seg-btn" data-gal-filter="diving">Coral Diving (3)</button>
+            <button type="button" class="seg-btn" data-gal-filter="nature">Rainforest &amp; Falls (3)</button>
+            <button type="button" class="seg-btn" data-gal-filter="health">Thermal &amp; Wellness (2)</button>
+          </div>
         </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <article class="gallery-card" data-category="diving" data-index="0" tabindex="0">
+            <img src="images/fiji-surprise/diving1.jpg" alt="Soft coral wall dive in Somosomo Strait" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="gallery-caption-overlay">
+              <p class="gallery-caption-meta">Somosomo Strait · 18m Depth</p>
+              <h3 class="gallery-caption-title">Great White Wall Drift Dive</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="diving" data-index="1" tabindex="0">
+            <img src="images/fiji-surprise/diving2.jpg" alt="Reef shark and pelagic conservation dive in Beqa Lagoon" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="gallery-caption-overlay">
+              <p class="gallery-caption-meta">Beqa Lagoon · Marine Reserve</p>
+              <h3 class="gallery-caption-title">Pelagic Reef Sanctuary</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="diving" data-index="2" tabindex="0">
+            <img src="images/fiji-surprise/diving3.jpg" alt="Manta ray passage in Drawaqa channel" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="gallery-caption-overlay">
+              <p class="gallery-caption-meta">Yasawa Chain · May to October</p>
+              <h3 class="gallery-caption-title">Drawaqa Manta Ray Passage</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="health" data-index="3" tabindex="0">
+            <img src="images/fiji-surprise/health1.jpg" alt="Sabeto geothermal mineral mud baths and spa" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="gallery-caption-overlay">
+              <p class="gallery-caption-meta">Sabeto Valley · Geothermal</p>
+              <h3 class="gallery-caption-title">Volcanic Mineral Thermal Pools</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="health" data-index="4" tabindex="0">
+            <img src="images/fiji-surprise/health2.jpg" alt="Coastal bure botanical massage and hydrotherapy" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="gallery-caption-overlay">
+              <p class="gallery-caption-meta">Savusavu Coast · Botanical Spa</p>
+              <h3 class="gallery-caption-title">Dilo Oil &amp; Seaweed Thalassotherapy</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="nature" data-index="5" tabindex="0">
+            <img src="images/fiji-surprise/nature1.jpg" alt="Tavoro triple waterfalls in Bouma National Park" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="gallery-caption-overlay">
+              <p class="gallery-caption-meta">Taveuni · Bouma Heritage Park</p>
+              <h3 class="gallery-caption-title">Tavoro Highland Cascades</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="nature" data-index="6" tabindex="0">
+            <img src="images/fiji-surprise/nature2.jpg" alt="Upper Navua Gorge basalt canyon kayaking" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="gallery-caption-overlay">
+              <p class="gallery-caption-meta">Viti Levu Interior · Canyon</p>
+              <h3 class="gallery-caption-title">Upper Navua Basalt Gorge</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card" data-category="nature" data-index="7" tabindex="0">
+            <img src="images/fiji-surprise/nature3.jpg" alt="Koroyanitu cloud forest and Mount Batilamu trek" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="gallery-caption-overlay">
+              <p class="gallery-caption-meta">Abaca Village · 1,195m Summit</p>
+              <h3 class="gallery-caption-title">Koroyanitu Cloud Forest Ridge</h3>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
-    <!-- Gallery Section Ends -->
 
-    <!-- Mutiple Slider Section Starts -->
-    <section id="water-slider">
-        <div class="container">
-            <h3>Start Planning Your Dream Holiday</h3>
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <div class="owl-img-par">
-                        <img src="images/slider/bangcok.jpg" alt="" class="img-responsive" />
-                        <div class="owl-img-info">
-                            <h3>Bangkok</h3>
-                            <p>THAILAND</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="owl-img-par">
-                        <img src="images/slider/Rome.jpg" alt="" class="img-responsive" />
-                        <div class="owl-img-info">
-                            <h3>Rome</h3>
-                            <p>ITALY</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="owl-img-par">
-                        <img src="images/slider/cario.jpg" alt="" class="img-responsive" />
-                        <div class="owl-img-info">
-                            <h3>Cairo</h3>
-                            <p>EGYPT</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="owl-img-par">
-                        <img src="images/slider/dubai.jpg" alt="" class="img-responsive" />
-                        <div class="owl-img-info">
-                            <h3>Dubai</h3>
-                            <p>EMIRATES</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="owl-img-par">
-                        <img src="images/slider/nassau.jpg" alt="" class="img-responsive" />
-                        <div class="owl-img-info">
-                            <h3>Nassau</h3>
-                            <p>BAHAMAS</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- ====================================================================
+         04. GLOBAL GATEWAYS & AGENCY CAPABILITIES (DARK OCEANIC REST SECTION)
+         ==================================================================== -->
+    <section class="section-block bg-ocean" id="destinations">
+      <div class="container">
+        <div class="section-header split-header">
+          <div>
+            <p class="section-kicker">04. Stopover Hubs &amp; Expedition Craft</p>
+            <h2 class="section-title">Start planning your dream multi-continent holiday.</h2>
+          </div>
+          <p class="section-description">
+            Pair your South Pacific voyage with a curated 4-night architectural or coastal stopover. Click any gateway below to load its itinerary into the booking concierge.
+          </p>
         </div>
+
+        <!-- 5 Global Slider / Gateway Cards -->
+        <div class="destinations-scroll-track">
+          <article class="destination-tall-card" data-gateway="Bangkok, Thailand" tabindex="0">
+            <img src="images/slider/bangcok.jpg" alt="Bangkok riverside temples at twilight" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="destination-tall-scrim">
+              <p class="destination-country">Thailand · Southeast Asia</p>
+              <h3 class="destination-city">Bangkok</h3>
+              <p class="destination-Coords tabular-nums">13°45'N 100°30'E · From $1,480</p>
+            </div>
+          </article>
+
+          <article class="destination-tall-card" data-gateway="Rome, Italy" tabindex="0">
+            <img src="images/slider/Rome.jpg" alt="Rome historic architecture and piazzas" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="destination-tall-scrim">
+              <p class="destination-country">Italy · Mediterranean</p>
+              <h3 class="destination-city">Rome</h3>
+              <p class="destination-Coords tabular-nums">41°54'N 12°29'E · From $1,890</p>
+            </div>
+          </article>
+
+          <article class="destination-tall-card" data-gateway="Cairo, Egypt" tabindex="0">
+            <img src="images/slider/cario.jpg" alt="Cairo Nile riverfront and Giza plateau" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="destination-tall-scrim">
+              <p class="destination-country">Egypt · North Africa</p>
+              <h3 class="destination-city">Cairo</h3>
+              <p class="destination-Coords tabular-nums">30°02'N 31°14'E · From $1,620</p>
+            </div>
+          </article>
+
+          <article class="destination-tall-card" data-gateway="Dubai, Emirates" tabindex="0">
+            <img src="images/slider/dubai.jpg" alt="Dubai desert conservation reserve and coastline" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="destination-tall-scrim">
+              <p class="destination-country">United Arab Emirates · Gulf</p>
+              <h3 class="destination-city">Dubai</h3>
+              <p class="destination-Coords tabular-nums">25°12'N 55°16'E · From $1,950</p>
+            </div>
+          </article>
+
+          <article class="destination-tall-card" data-gateway="Nassau, Bahamas" tabindex="0">
+            <img src="images/slider/nassau.jpg" alt="Nassau coral cays and turquoise shallows" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            <div class="destination-tall-scrim">
+              <p class="destination-country">Bahamas · Atlantic Cays</p>
+              <h3 class="destination-city">Nassau</h3>
+              <p class="destination-Coords tabular-nums">25°04'N 77°20'E · From $2,120</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Asymmetric Bento Grid of Agency Capabilities -->
+        <div class="capabilities-bento">
+          <div class="capability-cell span-2">
+            <span class="capability-index">01. Aviation &amp; Maritime Logistics</span>
+            <div>
+              <h3 class="capability-title">Direct Amphibious Seaplane &amp; Private Yacht Routing</h3>
+              <p class="capability-copy">
+                Skip multi-hour ferry queues at Denarau. We coordinate customs clearance in Nadi with direct twin-engine seaplane water landings and private catamaran charters straight to your outer-island jetty.
+              </p>
+            </div>
+          </div>
+
+          <div class="capability-cell">
+            <span class="capability-index">02. Marine Science Access</span>
+            <div>
+              <h3 class="capability-title">Reef Biologist Field Guides</h3>
+              <p class="capability-copy">
+                Every Taveuni and Yasawa charter includes private briefings and coral restoration dives alongside resident marine naturalists.
+              </p>
+            </div>
+          </div>
+
+          <div class="capability-cell">
+            <span class="capability-index">03. Culinary &amp; Village Protocol</span>
+            <div>
+              <h3 class="capability-title">Authentic Sevusevu &amp; Coastal Dining</h3>
+              <p class="capability-copy">
+                Respectful village introductions guided by local elders, paired with line-caught Kokoda and earth-oven Lovo feasts.
+              </p>
+            </div>
+          </div>
+
+          <div class="capability-cell span-2">
+            <span class="capability-index">04. Weather-Adaptive Concierge</span>
+            <div>
+              <h3 class="capability-title">24/7 Trade-Wind &amp; Swell Itinerary Protection</h3>
+              <p class="capability-copy">
+                Our Nadi operations desk monitors South Pacific barometric shifts daily, proactively adjusting dive moorings, helicopter transfers, and inter-island crossings at zero administrative fee.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- Blog Section Starts -->
-    <section id="blog">
-        <div class="container">
-            <h3>News And Events</h3>
-            <div class="blog-par">
-                <div class="blog-content">
-                    <!-- one div for image and one for info -->
-                    <div class="blog-img-par">
-                        <img src="images/slider/bangcok.jpg" alt="" class="img-responsive">
 
-                    </div>
-                    <div class="blog-info-par">
-                        <ul>
-                            <li>Chiru Vishnoi</li>
-                            <li>24.08.2021</li>
-                        </ul>
-                        <h4>Lorem ipsum dolor consectetur</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut natus, deserunt deleniti
-                            sapiente omnis ab quas mollitia! Cumque, maxime at.</p>
+    <!-- ====================================================================
+         05. SEASONAL COUNTDOWN & INTERACTIVE BOOKING CONCIERGE
+         ==================================================================== -->
+    <section class="section-block bg-sand" id="concierge">
+      <div class="container">
+        <div class="concierge-layout">
+          <!-- Left Column: Live Seasonal Countdown & Attributable Proof -->
+          <div>
+            <div class="countdown-panel">
+              <p class="unboxed-metadata" style="color: #9CC0C9;">
+                <span>Dry-Season Trade Wind Window</span>
+                <span aria-hidden="true">·</span>
+                <span>Priority Seaplane Allocation</span>
+              </p>
+              <h2 class="section-title" style="color: #FFFFFF; margin-top: 8px;">
+                Next South Pacific Charter Release
+              </h2>
+              <p style="font-size: 0.9375rem; color: var(--text-on-dark-muted); margin-top: 10px;">
+                Outer-island bures in the Yasawa and Lau groups are capped at 14 villas per island. Lock in direct charter pricing before the current allocation closes:
+              </p>
 
-                    </div>
+              <div class="countdown-grid" id="clockdiv" aria-label="Countdown to allocation close">
+                <div class="clock-cell">
+                  <span class="clock-number days">14</span>
+                  <span class="clock-label">Days</span>
                 </div>
-                <div class="blog-content">
-                    <!-- one div for image and one for info -->
-                    <div class="blog-img-par">
-                        <img src="images/slider/cario.jpg" alt="" class="img-responsive">
-
-                    </div>
-                    <div class="blog-info-par">
-                        <ul>
-                            <li>Chiru Vishnoi</li>
-                            <li>24.08.2021</li>
-                        </ul>
-                        <h4>Lorem ipsum dolor consectetur</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut natus, deserunt deleniti
-                            sapiente omnis ab quas mollitia! Cumque, maxime at.</p>
-
-                    </div>
+                <div class="clock-cell">
+                  <span class="clock-number hours">23</span>
+                  <span class="clock-label">Hours</span>
                 </div>
+                <div class="clock-cell">
+                  <span class="clock-number minutes">59</span>
+                  <span class="clock-label">Minutes</span>
+                </div>
+                <div class="clock-cell">
+                  <span class="clock-number seconds">59</span>
+                  <span class="clock-label">Seconds</span>
+                </div>
+              </div>
+
+              <!-- Attributable Testimonial Proof -->
+              <blockquote style="padding-top: 20px; border-top: 1px solid var(--border-dark-hairline);">
+                <p style="font-size: 0.9375rem; font-style: italic; color: #EAE6DF; margin-bottom: 10px;">
+                  "Before working with the Nadi desk, we struggled to connect Taveuni's Rainbow Reef with a remote Yasawa atoll in a single 10-day window. Their private floatplane routing saved us two full transit days and placed us on the reef at slack tide every morning."
+                </p>
+                <footer style="font-size: 0.75rem; color: var(--text-on-dark-muted);">
+                  Dr. Elena Vance · Marine Photographer, Oceanic Society · 10-Night Taveuni &amp; Yasawa Charter
+                </footer>
+              </blockquote>
             </div>
-            <div class="blog-par">
-                <div class="blog-content">
-                    <!-- one div for image and one for info -->
-                    <div class="blog-img-par">
-                        <img src="images/slider/bangcok.jpg" alt="" class="img-responsive">
+          </div>
 
-                    </div>
-                    <div class="blog-info-par">
-                        <ul>
-                            <li>Chiru Vishnoi</li>
-                            <li>24.08.2021</li>
-                        </ul>
-                        <h4>Lorem ipsum dolor consectetur</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut natus, deserunt deleniti
-                            sapiente omnis ab quas mollitia! Cumque, maxime at.</p>
+          <!-- Right Column: Interactive Booking Form with Live Pricing -->
+          <div class="concierge-form-card">
+            <p class="section-kicker">05. Reservation &amp; Custom Charter Desk</p>
+            <h2 class="section-title" style="margin-top: 4px; margin-bottom: 8px;">
+              Configure Your Voyage
+            </h2>
+            <p class="section-description" style="margin-bottom: 28px; font-size: 0.9375rem;">
+              Complete your itinerary parameters below for an instant cost estimate and confirmed reservation dossier.
+            </p>
 
-                    </div>
+            <form id="bookingConciergeForm" novalidate>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="bookFirstName">First Name *</label>
+                  <input type="text" id="bookFirstName" class="form-input" placeholder="e.g. Alistair" required />
                 </div>
-                <div class="blog-content">
-                    <!-- one div for image and one for info -->
-                    <div class="blog-img-par">
-                        <img src="images/slider/cario.jpg" alt="" class="img-responsive">
 
-                    </div>
-                    <div class="blog-info-par">
-                        <ul>
-                            <li>Chiru Vishnoi</li>
-                            <li>24.08.2021</li>
-                        </ul>
-                        <h4>Lorem ipsum dolor consectetur</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut natus, deserunt deleniti
-                            sapiente omnis ab quas mollitia! Cumque, maxime at.</p>
-
-                    </div>
+                <div class="form-field">
+                  <label for="bookLastName">Last Name *</label>
+                  <input type="text" id="bookLastName" class="form-input" placeholder="e.g. Sterling" required />
                 </div>
-            </div>
+
+                <div class="form-field">
+                  <label for="bookEmail">Email Address *</label>
+                  <input type="email" id="bookEmail" class="form-input" placeholder="alistair@domain.com" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="bookOrigin">Departure Country</label>
+                  <select id="bookOrigin" class="form-select">
+                    <option value="Australia (SYD / BNE)">Australia (SYD / BNE)</option>
+                    <option value="United States (LAX / SFO)">United States (LAX / SFO)</option>
+                    <option value="New Zealand (AKL)">New Zealand (AKL)</option>
+                    <option value="United Kingdom (LHR)">United Kingdom (LHR)</option>
+                    <option value="Canada (YVR)">Canada (YVR)</option>
+                    <option value="Singapore / Asia (SIN)">Singapore / Asia (SIN)</option>
+                  </select>
+                </div>
+
+                <div class="form-field span-full">
+                  <label for="bookDestination">Selected Destination or Package *</label>
+                  <select id="bookDestination" class="form-select" required>
+                    <option value="Yasawa Islands Private Lagoon|2680">Fiji: Yasawa Islands Private Lagoon ($2,680 / guest)</option>
+                    <option value="Outer Islands Kadavu &amp; Lau|2450">Fiji: Outer Islands Kadavu &amp; Lau ($2,450 / guest)</option>
+                    <option value="Taveuni Rainbow Reef &amp; Falls|2390">Fiji: Taveuni Rainbow Reef &amp; Falls ($2,390 / guest)</option>
+                    <option value="Pacific Harbour &amp; Beqa Lagoon|2150">Fiji: Pacific Harbour &amp; Beqa Lagoon ($2,150 / guest)</option>
+                    <option value="Savusavu Thermal &amp; Pearl Bay|2290">Fiji: Savusavu Thermal &amp; Pearl Bay ($2,290 / guest)</option>
+                    <option value="Suncoast &amp; Bligh Water|1980">Fiji: Suncoast &amp; Bligh Water ($1,980 / guest)</option>
+                    <option value="Nadi &amp; Mamanuca Private Charter|1850">Fiji: Nadi &amp; Mamanuca Private Charter ($1,850 / guest)</option>
+                    <option value="Rome, Italy Architectural Odyssey|1890">Europe: Rome Architectural Odyssey ($1,890 / guest)</option>
+                    <option value="French Riviera &amp; Provence|2190">Europe: French Riviera &amp; Provence ($2,190 / guest)</option>
+                    <option value="United Kingdom Highlands &amp; London|1940">Europe: United Kingdom Highlands &amp; London ($1,940 / guest)</option>
+                    <option value="Bangkok, Thailand Sanctuary|1480">Asia: Bangkok &amp; Chao Phraya Sanctuary ($1,480 / guest)</option>
+                    <option value="Cairo, Egypt Nile Heritage|1620">MENA: Cairo &amp; Nile Heritage ($1,620 / guest)</option>
+                    <option value="Dubai, Emirates Desert &amp; Coast|1950">MENA: Dubai Desert Reserve &amp; Coast ($1,950 / guest)</option>
+                    <option value="Nassau, Bahamas Out-Island Charter|2120">Americas: Nassau Out-Island Charter ($2,120 / guest)</option>
+                    <option value="Rajasthan &amp; Kerala Heritage, India|1690">Asia: Rajasthan &amp; Kerala Heritage, India ($1,690 / guest)</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="bookArrival">Preferred Arrival Date *</label>
+                  <input type="date" id="bookArrival" class="form-input tabular-nums" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="bookNights">Voyage Length &amp; Guests</label>
+                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                    <select id="bookNights" class="form-select tabular-nums" aria-label="Number of nights">
+                      <option value="7">7 Nights</option>
+                      <option value="10">10 Nights (+35%)</option>
+                      <option value="14">14 Nights (+70%)</option>
+                    </select>
+                    <select id="bookTravelers" class="form-select tabular-nums" aria-label="Number of guests">
+                      <option value="1">1 Guest</option>
+                      <option value="2" selected>2 Guests</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests</option>
+                      <option value="6">6 Guests</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-field span-full">
+                  <label for="bookNotes">Transfer Preferences &amp; Dietary / Dive Notes</label>
+                  <textarea
+                    id="bookNotes"
+                    class="form-textarea"
+                    rows="3"
+                    placeholder="Specify PADI/SSI certification level, seaplane transfer window, or private villa preferences..."
+                  ></textarea>
+                </div>
+
+                <!-- Live Calculated Summary Bar -->
+                <div class="booking-summary-strip">
+                  <div>
+                    <p style="font-size: 0.75rem; color: var(--text-muted);">Estimated Total Investment (Includes Transfers &amp; Taxes)</p>
+                    <p class="tabular-nums" id="liveEstimateDisplay" style="font-size: 1.5rem; font-weight: 600; color: var(--text-primary);">
+                      $5,360 USD
+                    </p>
+                  </div>
+                  <button type="submit" class="btn-primary">
+                    Confirm &amp; Generate Itinerary Code
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <div id="bookingFeedbackContainer" aria-live="polite"></div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Mutiple Slider Section Ends -->
 
-    <!-- Footer Starts-->
-    <footer>
-        <div class="container">
-            <div class="footer-par">
-                <div class="footer-1 ">
-                    <h3 class="footer-logo-h">Travel</h3>
-                </div>
-                <div class="footer-1 footer-info">
-                    <h3>Tourism Fiji</h3>
-                    <ul>
-                        <li><a href="">Tourism Fiji One</a></li>
-                        <li><a href="">Tourism Fiji Two</a></li>
-                        <li><a href="">Tourism Fiji Three</a></li>
-                        <li><a href="">Tourism Fiji Four</a></li>
-                    </ul>
-                </div>
-                <div class="footer-1 footer-info">
-                    <h3>Find Your Happy</h3>
-                    <ul>
-                        <li><a href="">Tourism Fiji One</a></li>
-                        <li><a href="">Tourism Fiji Two</a></li>
-                        <li><a href="">Tourism Fiji Three</a></li>
-                    </ul>
-                </div>
-                <div class="footer-1 footer-info">
-                    <h3>Need Help?</h3>
-                    <ul>
-                        <li><a href="">Tourism Fiji One</a></li>
-                        <li><a href="">Tourism Fiji Two</a></li>
-                    </ul>
-                </div>
-            </div>
+    <!-- ====================================================================
+         06. EDITORIAL JOURNAL (NEWS & FIELD DISPATCHES)
+         ==================================================================== -->
+    <section class="section-block" id="journal">
+      <div class="container">
+        <div class="section-header split-header">
+          <div>
+            <p class="section-kicker">06. Field Notes &amp; Island Dispatches</p>
+            <h2 class="section-title">Seasonal briefings from our marine &amp; overland guides.</h2>
+          </div>
+          <p class="section-description">
+            Practical routing intelligence, reef conservation updates, and cultural etiquette for travelers bound for Fiji and our global partner hubs.
+          </p>
         </div>
-        <p class="copyright">Copyright © 2021 Created By Chiranjeev Vishnoi</p>
-    </footer>
 
+        <div class="journal-grid" id="journalGrid">
+          <article class="journal-card">
+            <div class="journal-thumb">
+              <img src="images/fiji-surprise/diving1.jpg" alt="Soft coral bloom in Somosomo Strait" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            </div>
+            <div>
+              <div class="unboxed-metadata">
+                <span>Chiru Vishnoi</span>
+                <span aria-hidden="true">·</span>
+                <span>August 24</span>
+                <span aria-hidden="true">·</span>
+                <span>6 min read</span>
+              </div>
+              <h3 class="journal-title">Navigating the Lunar Tides of the Somosomo Strait</h3>
+              <p class="journal-excerpt">
+                Why timing your Taveuni dive charter around the waning quarter moon reveals the Great White Wall at peak soft-coral expansion.
+              </p>
+              <button type="button" class="text-action-link" data-journal-id="0">
+                Read Full Dispatch <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </article>
 
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/extrenaljq.js"></script>
+          <article class="journal-card">
+            <div class="journal-thumb">
+              <img src="images/fiji-surprise/nature2.jpg" alt="Highland trail in Viti Levu" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            </div>
+            <div>
+              <div class="unboxed-metadata">
+                <span>Mereoni Tui</span>
+                <span aria-hidden="true">·</span>
+                <span>September 12</span>
+                <span aria-hidden="true">·</span>
+                <span>5 min read</span>
+              </div>
+              <h3 class="journal-title">Village Etiquette &amp; The Art of the Sevusevu Ceremony</h3>
+              <p class="journal-excerpt">
+                What to bring, how to dress, and how kava root presentations open doors to community-owned waterfalls in Vanua Levu.
+              </p>
+              <button type="button" class="text-action-link" data-journal-id="1">
+                Read Full Dispatch <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <div class="journal-thumb">
+              <img src="images/slider/bangcok.jpg" alt="Chao Phraya heritage barge in Bangkok" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            </div>
+            <div>
+              <div class="unboxed-metadata">
+                <span>Chiru Vishnoi</span>
+                <span aria-hidden="true">·</span>
+                <span>October 04</span>
+                <span aria-hidden="true">·</span>
+                <span>4 min read</span>
+              </div>
+              <h3 class="journal-title">Pairing Pacific Crossings with a 72-Hour Bangkok River Stopover</h3>
+              <p class="journal-excerpt">
+                How travelers routing from Europe and Asia break up long-haul flights with private rice-barge dining along the Chao Phraya.
+              </p>
+              <button type="button" class="text-action-link" data-journal-id="2">
+                Read Full Dispatch <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <div class="journal-thumb">
+              <img src="images/slider/cario.jpg" alt="Dahabiya sailing vessel on the Nile" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+            </div>
+            <div>
+              <div class="unboxed-metadata">
+                <span>Tariq Al-Mansoor</span>
+                <span aria-hidden="true">·</span>
+                <span>November 18</span>
+                <span aria-hidden="true">·</span>
+                <span>7 min read</span>
+              </div>
+              <h3 class="journal-title">Private Dahabiya Sailing Between Luxor and Aswan</h3>
+              <p class="journal-excerpt">
+                Trading large river cruisers for twin-masted wind-powered vessels that moor at quiet sandstone quarries and temple islands.
+              </p>
+              <button type="button" class="text-action-link" data-journal-id="3">
+                Read Full Dispatch <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       QUIET FOOTER
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2 class="footer-brand-title">Fiji &amp; Beyond</h2>
+          <p class="footer-prose">
+            Official Archipelago &amp; Global Bespoke Expedition Desk. Operating licensed marine charters, inter-island seaplane transfers, and curated international stopovers since 2014.
+          </p>
+          <p class="unboxed-metadata" style="color: #8CA0AB;">
+            <span>Denarau Marina, Nadi, Fiji</span>
+            <span aria-hidden="true">·</span>
+            <span class="tabular-nums">+679 675 0410</span>
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-col-heading">Fiji Regions</h3>
+          <ul class="footer-links">
+            <li><a href="#regions" data-select-region="0">Outer Islands &amp; Lau</a></li>
+            <li><a href="#regions" data-select-region="1">Pacific Harbour &amp; Beqa</a></li>
+            <li><a href="#regions" data-select-region="2">Savusavu &amp; Vanua Levu</a></li>
+            <li><a href="#regions" data-select-region="4">Taveuni Garden Island</a></li>
+            <li><a href="#regions" data-select-region="5">Yasawa Leeward Chain</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-heading">Curated Collections</h3>
+          <ul class="footer-links">
+            <li><a href="#packages" data-footer-pkg="fiji">Private Lagoon Charters</a></li>
+            <li><a href="#packages" data-footer-pkg="europe">Mediterranean &amp; UK</a></li>
+            <li><a href="#packages" data-footer-pkg="global">Asia &amp; Nile Expeditions</a></li>
+            <li><a href="#experiences">Soft-Coral Dive Archives</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-heading">Traveler Desk</h3>
+          <ul class="footer-links">
+            <li><a href="#concierge">Configure Custom Voyage</a></li>
+            <li><a href="#journal">Seasonal Tide &amp; Weather Notes</a></li>
+            <li><a href="#concierge" id="footerOpenSavedLink">View Saved Itineraries</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fiji &amp; Beyond Expedition Desk. Crafted with respect for South Pacific marine sanctuaries.</p>
+        <p class="tabular-nums">IATA &amp; Tourism Fiji Accredited Operator · #FJ-8842</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       UNIVERSAL INTERACTIVE MODAL (LIGHTBOX, JOURNAL READER, SAVED TRIPS)
+       ==================================================================== -->
+  <div class="modal-backdrop" id="universalModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="closeModalBtn" aria-label="Close dialog">&times;</button>
+      <div id="modalBodyContent"></div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/extrenaljq.js"></script>
 </body>
 
 </html>
